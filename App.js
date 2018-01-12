@@ -27,12 +27,58 @@ export default class App extends Component {
     .catch(err => console.log(err))
   }
 
+  _weatherLotation = () => {
+    setTimeout(lotate => this.setState({
+          currentWeather: "Clear",
+          temprature: 230,
+          isLoaded: true
+        }), 3000);
+    setTimeout(lotate => this.setState({
+          currentWeather: "Rain",
+          temprature: 230,
+          isLoaded: true
+        }), 6000);
+    setTimeout(lotate => this.setState({
+          currentWeather: "Thunderstorm",
+          temprature: 230,
+          isLoaded: true
+        }), 9000);
+    setTimeout(lotate => this.setState({
+          currentWeather: "Clouds",
+          temprature: 230,
+          isLoaded: true
+        }), 12000);
+    setTimeout(lotate => this.setState({
+          currentWeather: "Snow",
+          temprature: 230,
+          isLoaded: true
+        }), 15000);
+    setTimeout(lotate => this.setState({
+          currentWeather: "Drizzle",
+          temprature: 230,
+          isLoaded: true
+        }), 18000);
+    setTimeout(lotate => this.setState({
+          currentWeather: "Haze",
+          temprature: 230,
+          isLoaded: true
+        }), 21000);
+    setTimeout(lotate => this.setState({
+          currentWeather: "Mist",
+          temprature: 230,
+          isLoaded: true
+        }), 24000);
+    setTimeout(lotate => (
+      navigator.geolocation.getCurrentPosition(
+        position => {
+          this._getWeather(position.coords.latitude, position.coords.longitude);
+        }, error => this.setState({ error: error })
+      )
+    ), 27000)
+  }
+
   componentDidMount() {
-    navigator.geolocation.getCurrentPosition(
-      position => {
-        this._getWeather(position.coords.latitude, position.coords.longitude)
-      }, error => this.setState({ error: error})
-    )
+        this._weatherLotation()
   }
 
   render() {

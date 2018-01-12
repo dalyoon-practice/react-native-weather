@@ -21,7 +21,7 @@ const weatherCases = {
     color: ["#00ECBC", "#007ADF"],
     title: "Thunderstorm in the house",
     subtitle: "Actually, outside of the house",
-    icon: "weather-ligntning"
+    icon: "weather-lightning"
   },
   Clouds: {
     color: ["#D7D2CC", "#304352"],
@@ -44,13 +44,13 @@ const weatherCases = {
   Haze: {
     color: ["#E2F1FF", "#9AACBC"],
     title: "Haze",
-    subtitle: "Mysterious-",
+    subtitle: "Don't know what this is",
     icon: "weather-fog"
   },
   Mist: {
-    color: ["#E2F1FF", "#9AACBC"],
+    color: ["#657289", "#404754"],
     title: "Mist",
-    subtitle: "Fuck, I can't see-",
+    subtitle: "It's like you have no glasses on",
     icon: "weather-fog"
   }
 };

@@ -32,49 +32,49 @@ export default class App extends Component {
           currentWeather: "Clear",
           temprature: 230,
           isLoaded: true
-        }), 3000);
+        }), 1000);
     setTimeout(lotate => this.setState({
           currentWeather: "Rain",
           temprature: 230,
           isLoaded: true
-        }), 6000);
+        }), 2000);
     setTimeout(lotate => this.setState({
           currentWeather: "Thunderstorm",
           temprature: 230,
           isLoaded: true
-        }), 9000);
+        }), 3000);
     setTimeout(lotate => this.setState({
           currentWeather: "Clouds",
           temprature: 230,
           isLoaded: true
-        }), 12000);
+        }), 4000);
     setTimeout(lotate => this.setState({
           currentWeather: "Snow",
           temprature: 230,
           isLoaded: true
-        }), 15000);
+        }), 5000);
     setTimeout(lotate => this.setState({
           currentWeather: "Drizzle",
           temprature: 230,
           isLoaded: true
-        }), 18000);
+        }), 6000);
     setTimeout(lotate => this.setState({
           currentWeather: "Haze",
           temprature: 230,
           isLoaded: true
-        }), 21000);
+        }), 7000);
     setTimeout(lotate => this.setState({
           currentWeather: "Mist",
           temprature: 230,
           isLoaded: true
-        }), 24000);
+        }), 8000);
     setTimeout(lotate => (
       navigator.geolocation.getCurrentPosition(
         position => {
           this._getWeather(position.coords.latitude, position.coords.longitude);
         }, error => this.setState({ error: error })
       )
-    ), 27000)
+    ), 9000)
   }
 
   componentDidMount() {
